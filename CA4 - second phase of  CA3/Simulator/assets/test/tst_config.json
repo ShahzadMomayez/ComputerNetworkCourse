@@ -1,0 +1,90 @@
+{
+    "simulation_duration": "60s", 
+    "cycle_duration": "10ms",
+    "TTL": 10,
+    "packets_per_simulation": 500,
+    "statistical_distribution": "Poisson | Pareto",
+    "router_buffer_size": 40,
+    "router_port_count": 6,
+    "routing_protocol": "RIP | OSPF",
+    "routing_table_update_interval": "Infinity | 30 | 60",
+    "routing_per_port": true,
+    "routing_table_size": 10,
+    "routing_packets_per_port_cycle": 1,
+    "put your needed parameters here": "value",
+    "Autonomous_systems":
+    [
+        {
+            "id": 1,
+            "topology_type": "Mesh",
+            "network_portion": "192.168.100",
+            "node_count": 16,
+            "as_gateways": [14, 15, 16],
+            "user_gateways": [1, 2, 3, 4],
+            "dhcp_server": 5,
+            "broken_routers": [7, 14],
+            "gateways": [
+                {
+                    "node": 1,
+                    "users": [24, 25]
+                },
+                {
+                    "node": 2,
+                    "users": [26, 27]
+                },
+                {
+                    "node": 3,
+                    "users": [28, 29]
+                },
+                {
+                    "node": 4,
+                    "users": [30, 31]
+                }
+            ],
+            "connect_to_as": null
+        },
+        {
+            "id": 2,
+            "topology_type": "RingStar",
+            "network_portion": "192.168.200",
+            "node_count": 7,
+            "as_gateways": [17, 18, 19],
+            "user_gateways": [20, 21, 22],
+            "dhcp_server": 23,
+            "broken_routers": [23],
+            "gateways": [
+                {
+                    "node": 20,
+                    "users": [34, 35, 36]
+                },
+                {
+                    "node": 21,
+                    "users": [32, 33]
+                },
+                {
+                    "node": 22,
+                    "users": [37, 38]
+                }
+            ],
+            "connect_to_as": [
+                {
+                    "id": 1,
+                    "gateway_pairs": [
+                        {
+                            "gateway": 17,
+                            "connect_to": 14
+                        },
+                        {
+                            "gateway": 18,
+                            "connect_to": 15
+                        },
+                        {
+                            "gateway": 19,
+                            "connect_to": 16
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
