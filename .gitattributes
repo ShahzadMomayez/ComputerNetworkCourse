@@ -1,0 +1,4 @@
+CA2[[:space:]]-[[:space:]]GNS3/Q1&2/** filter=lfs diff=lfs merge=lfs -text
+CA2[[:space:]]-[[:space:]]GNS3/Q3/** filter=lfs diff=lfs merge=lfs -text
+CA2[[:space:]]-[[:space:]]GNS3/Q4/** filter=lfs diff=lfs merge=lfs -text
+CA2[[:space:]]-[[:space:]]GNS3/Q5/** filter=lfs diff=lfs merge=lfs -text
