@@ -7,5 +7,5 @@ This repository contains the course projects for the **Computer Networks** class
 
 - **CA1**: A distributed voice calling system developed using Qt.  
 - **CA2**: Network topologies and simulations built using GNS3.  
-- **CA3**: A custom computer networks simulator developed from scratch.  
-- **CA4**: An extension and second phase of the CA3 simulator project.
+- **CA3**: A custom computer networks simulator developed from scratch using Qt.  
+- **CA4**: An extension and second phase of the CA3 simulator project using Qt.
