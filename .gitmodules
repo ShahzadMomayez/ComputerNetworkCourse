@@ -4,3 +4,6 @@
 [submodule "CA3 - Computer Networks Simulator"]
 	path = CA3 - Computer Networks Simulator
 	url = https://github.com/ShahzadMomayez/CN_Course_CA3
+[submodule "CA1 - Distributed Voice Call"]
+	path = CA1 - Distributed Voice Call
+	url = https://github.com/ShahzadMomayez/CN_CA_1
